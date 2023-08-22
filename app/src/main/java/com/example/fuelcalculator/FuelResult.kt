@@ -10,9 +10,6 @@ class FuelResult : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fuel_result)
 
-        supportActionBar?.setHomeButtonEnabled(true)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
         val txtResultado = findViewById<TextView>(R.id.txtResultado)
         val btnVoltar = findViewById<Button>(R.id.btnVoltar)
 
