@@ -1,5 +1,7 @@
 # # FuelCalculator
-FuelCalculator foi um projeto onde me desafiei a criar um aplicativo DO ZERO até conseguir um resultado aceitável e funcional no menor tempo possível de desenvolvimento. Em pouco mais de 6 horas este foi o resultado obtido: Na tela principal o usuário insere o preço dos combustíveis do posto que deseja abastecer e o consumo médio do seu veículo, o resultado é a informação de qual vale mais a pena e a economia média em km/litro.
+FuelCalculator foi um projeto onde me desafiei a criar um aplicativo DO ZERO até conseguir um resultado aceitável e funcional no menor tempo possível de desenvolvimento. 
+
+Em pouco mais de 6 HORAS este foi o resultado obtido: Na tela principal o usuário insere o preço dos combustíveis do posto que deseja abastecer e o consumo médio do seu veículo, o resultado é a informação de qual vale mais a pena e a economia média em km/litro.
 
 
 
