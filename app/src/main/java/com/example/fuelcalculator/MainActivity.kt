@@ -18,21 +18,21 @@ class MainActivity : AppCompatActivity() {
         val edtKmAlcool: EditText = findViewById(R.id.KM_Alcool)
         val edtKmGasolina: EditText = findViewById(R.id.KM_Gasolina)
 
-        btnCalcular.setOnClickListener{
+        btnCalcular.setOnClickListener {
 
             val precoAlcoolStr: String = edtPrecoAlcool.text.toString()
             val precoGasolinaStr: String = edtPrecoGasolina.text.toString()
             val KmAlcoolStr: String = edtKmAlcool.text.toString()
             val KmGasolinaStr: String = edtKmGasolina.text.toString()
 
-            if (precoAlcoolStr.isNotEmpty() && precoGasolinaStr.isNotEmpty() && KmAlcoolStr.isNotEmpty() && KmGasolinaStr.isNotEmpty()){
+            if (precoAlcoolStr.isNotEmpty() && precoGasolinaStr.isNotEmpty() && KmAlcoolStr.isNotEmpty() && KmGasolinaStr.isNotEmpty()) {
                 val PrecoAlcool: Float = precoAlcoolStr.toFloat()
                 val PrecoGasolina: Float = precoGasolinaStr.toFloat()
                 val KmAlcool: Float = KmAlcoolStr.toFloat()
                 val KmGasolina: Float = KmGasolinaStr.toFloat()
 
-                val mediaAlcool: Float = KmAlcool / PrecoAlcool
-                val mediaGasolina: Float = KmGasolina / PrecoGasolina
+                val mediaAlcool: Float = PrecoAlcool / KmAlcool
+                val mediaGasolina: Float = PrecoGasolina / KmGasolina
 
                 val intent = Intent(this, FuelResult::class.java)
                     .apply {
@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_LONG).show()
             }
-
         }
     }
 }

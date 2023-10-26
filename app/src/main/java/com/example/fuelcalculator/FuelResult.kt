@@ -16,10 +16,14 @@ class FuelResult : AppCompatActivity() {
         val mediaAlcool = intent.getFloatExtra("EXTRA_RESULT_ALC", 0.0f)
         val mediaGasolina = intent.getFloatExtra("EXTRA_RESULT_GAS", 0.0f)
 
-        val melhorOpcao = if (mediaAlcool < mediaGasolina) "Gasolina" else "Álcool"
-        val economia = if (mediaAlcool < mediaGasolina) mediaGasolina - mediaAlcool else mediaAlcool - mediaGasolina
+        val melhorOpcao = if (mediaAlcool < mediaGasolina) "Álcool" else "Gasolina"
+        val economiaTotal: Float = if (melhorOpcao == "Álcool") {
+            mediaGasolina - mediaAlcool
+        } else {
+            mediaAlcool - mediaGasolina
+        }
 
-        txtResultado.text = getString(R.string.resultado_text, melhorOpcao, economia)
+        txtResultado.text = getString(R.string.resultado_text, melhorOpcao, economiaTotal)
 
         btnVoltar.setOnClickListener {
             finish()
