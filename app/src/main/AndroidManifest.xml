@@ -13,12 +13,12 @@
         android:theme="@style/Theme.FuelCalculator"
         tools:targetApi="31" >
         <activity
-            android:name=".FuelResult"
+            android:name="com.devserginho.fuelcalculator.FuelResult"
             android:exported="false"
             android:label="@string/title_activity_fuel_result"
             android:theme="@style/Theme.FuelCalculator" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.devserginho.fuelcalculator.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

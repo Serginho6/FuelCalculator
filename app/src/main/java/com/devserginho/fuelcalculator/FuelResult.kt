@@ -1,4 +1,4 @@
-package com.example.fuelcalculator
+package com.devserginho.fuelcalculator
 
 import android.os.Bundle
 import android.widget.Button
